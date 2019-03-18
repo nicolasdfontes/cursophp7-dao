@@ -1,5 +1,5 @@
 <?php
-class sql extends PDO{
+class Sql extends PDO{
 	private $conn;
 	public function __construct($db,$server,$login,$senha){
 		$this->conn=new PDO("sqlsrv:Database=$db;server=localhost".DIRECTORY_SEPARATOR."$server;ConnectionPooling=0",$login,$senha);
