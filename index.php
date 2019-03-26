@@ -11,8 +11,17 @@ echo json_encode(Usuario::getList());
 Carrega uma lista de usuários bucando pelo login
 echo json_encode(Usuario::busca("q"));
 
-Carrega um usuário usando o login e a senha*/
-$usuario=new Usuario();
-$usuario->login("user","!@#$");
-echo $usuario;
+Carrega um usuário usando o login e a senha
+$user=new Usuario();
+$user->login("user","!@#$");
+echo $user;
+
+Criando um novo usuário
+$aluno=new Usuario();
+$aluno->insert("aluno","abc123");
+echo $aluno;*/
+
+$user=new Usuario();
+$user->update(33,"professor","abc123");
+echo $user;
 ?>

@@ -12,7 +12,8 @@ class Sql extends PDO{
 		$stmt->execute();
 		return $stmt;
 	}
-	/*private function setParams($statement,$parameters=array()){
+	/*Funções inúteis
+	private function setParams($statement,$parameters=array()){
 		foreach ($parameters as $key => $value) {
 			$statement->bindParam($key,$value);
 		}
