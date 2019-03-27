@@ -19,9 +19,15 @@ echo $user;
 Criando um novo usuário
 $aluno=new Usuario();
 $aluno->insert("aluno","abc123");
-echo $aluno;*/
+echo $aluno;
 
+Alterar um usuário
 $user=new Usuario();
 $user->update(33,"professor","abc123");
+echo $user;
+
+Deletar um usuário*/
+$user=new Usuario();
+$user->delete(34);
 echo $user;
 ?>
